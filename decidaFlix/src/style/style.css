@@ -1,0 +1,50 @@
+body{
+    color: #FFFCF9; 
+    background-image: linear-gradient(45deg,hsl(240, 86%, 23%), black, hsl(0, 88%, 29%));
+    min-height: 91vh;
+    
+}
+
+.logo {
+    width: 87px;
+    height: 62px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.button {
+    width: 180px;
+    height: 47px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    background-color: #E9E6E3;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-inline: auto;
+    margin-block: 30px;
+}
+.button:hover {
+    filter: brightness(0.8);
+    text-decoration: underline;
+}
+.button img{
+    width: 35px;
+    height: 25px;
+}
+
+footer{
+    width: 90vw;
+    text-align: center;
+    margin-inline: auto;
+}
