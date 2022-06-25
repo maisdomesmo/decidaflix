@@ -4,6 +4,7 @@ import { MovieCard } from './components/movie-card'
 import { api } from './services/api'
 import { MovieTypeProps } from './types';
 import './style/style.css'
+import { AxiosResponse } from 'axios'
 
 function App() {
   const [movie, setMovie] = useState<MovieTypeProps>()
@@ -16,7 +17,7 @@ function App() {
 
   async function getMovie(){
     let movieId = getRandomInt(2, 996)
-    await api.get(`/${movieId}?api_key=9609b26f22b90594b520799edb163f81`).then(response => {
+    await api.get(`/${movieId}?api_key=9609b26f22b90594b520799edb163f81`).then((response: AxiosResponse<any, any>) => {
       setMovie(response.data)  
     })
   }
